@@ -1,0 +1,65 @@
+<div class="hello">
+    <h1>{{ msg }}</h1>
+    <div class="btn-group">
+        <button type="button" @click="listUsers"
+            style="font-size: 18px;margin-left:15px;margin-right:15px;float:center;border:none;background-color: #e03249"
+            class="btn btn-primary"> <b>&nbsp;GET ALL&nbsp;</b>
+        </button>
+        <label for="email">Enter Email to get single User:</label>
+        <input type="text" id="email" name="email" v-model="email1"><br><br>
+        <button type="button" @click="getUser"
+            style="font-size: 18px;margin-left:15px;margin-right:15px;float:center;border:none;background-color: #e03249"
+            class="btn btn-primary"> <b>&nbsp;GET Single User&nbsp;</b>
+        </button>
+        <button type="button" @click="deleteUser"
+            style="font-size: 18px;margin-left:15px;margin-right:15px;float:center;border:none;background-color: #e03249"
+            class="btn btn-primary"> <b>&nbsp;Remove Single User&nbsp;</b>
+        </button>
+        <label for="email">Enter Contact number of User whom you want to update:</label>
+        <input type="text" id="contact1" name="contact1" v-model="contact1"><br><br>
+        <button type="button" @click="updateUser"
+            style="font-size: 18px;margin-left:15px;margin-right:15px;float:center;border:none;background-color: #e03249"
+            class="btn btn-primary"> <b>&nbsp;Update Single User&nbsp;</b>
+        </button>
+
+    </div>
+    <div>
+        <div v-if="single" class="row">
+            <h2>Single User Display</h2>
+            <div class="column">
+                <ul id="example-1">
+                    <li>{{ fullname }}</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul id="example-1">
+                    <li>{{ email2 }}</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul id="example-1">
+                    <li>{{ contact }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div v-if="multiple" class="row">
+        <h2>Multiple Users Display</h2>
+        <div class="column">
+            <ul v-for="n in userName" :key="n" id="example-1">
+                <li>{{ n }}</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul v-for="e in userEmail" :key="e" id="example-1">
+                <li>{{ e }}</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul v-for="c in userContact" :key="c" id="example-1">
+                <li>{{ c }}</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
