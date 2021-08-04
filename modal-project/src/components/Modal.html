@@ -32,13 +32,12 @@
         <hr id="hr1" style="color: red;width:42%;float:left;height:4px;">
         <hr id="hr2" style="width:42%;float:right;height:4px;">
         <br><br>
-        <div id="form1">
-            <form>
+        <div id="form1" >
+            <form >
                 <div class="form-group">
                     <label style="font-size: 18px;" for="email"><b> Email or Phone</b></label><br>
-                    <input type="text" class="form-control" v-model="input.email" style="margin-left: -3%;border: 0;box-shadow: none;margin-top:5px;"
-                        id="email" aria-describedby="emailHelp"
-                        placeholder="nearpear@gmail.com or 923*********">
+                    <input type="text" class="form-control" v-model="input.email" style="padding:0;border: 0;box-shadow: none;margin-top:5px;"
+                        id="email" placeholder="nearpear@gmail.com or 923*********">
                         <p id="dis1" style="display :none;color:red;margin : 0;">Email is Mandatory</p>
                         <p id="dis15" style="display :none;color:red;margin : 0;">Email does not exist in database!</p>
                         <p id="dis13" style="display :none;color:red;margin : 0;">Email is Invalid!</p>
@@ -46,7 +45,7 @@
                 <div class="form-group">
                     <label style="font-size: 18px;" for="password"><b>Password</b></label><br>
                     <input type="password"  class="form-control" v-model="input.password"
-                        style="margin-left: -3%;border: 0;box-shadow: none;margin-top:5px;" id="password"
+                        style="padding:0;border: 0;box-shadow: none;margin-top:5px;" id="password"
                         placeholder="Password">
                         <p id="dis2" style="display :none;color:red;margin : 0">Password is Required</p>
                         <p id="dis16" style="display :none;color:red;margin : 0;">Password Incorrect</p>
@@ -66,20 +65,19 @@
             <hr style="width:45%;float:left;height:1px;"><b>OR</b>
             <hr style="width:45%;float:right;height:1px;">
             <br>
-            <button type="button" class="btn btn-light btn-lg"
-                style="text-align:center;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:90%"><img
+            <button type="button" class="btn btn-light btn-lg" style="text-align:center !important;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:100%;"><img
                     style="margin-left:19%;" src="../assets/apple-black.svg" alt="Nature" width="25"
                     height="25">&emsp;Continue as a Guest</button>
             <button type="button" class="btn btn-light btn-lg"
-                style="text-align:center;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:90%"><img
+                style="text-align:center;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:100%"><img
                     style="margin-left:22%;" src="../assets/MaskGroup82.svg" alt="Nature" width="20"
                     height="20">&emsp;Continue with Google</button>
             <button type="button" class="btn btn-light btn-lg"
-                style="float:left;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:90%"><img
+                style="float:left;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:100%"><img
                     style="margin-left:23%;" src="../assets/f-blue.svg" alt="Nature" width="20"
                     height="20">&emsp;Continue with Facebook</button>
             <button type="button" class="btn btn-light btn-lg"
-                style="float:left;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:90%"><img
+                style="float:left;font-size: 15px;margin-top:5px;border-radius: 50px 50px 50px 50px;width:100%"><img
                     style="margin-left:19%;" src="../assets/apple-black.svg" alt="Nature" width="25"
                     height="25">&emsp;Continue with Apple</button>
 
@@ -89,14 +87,14 @@
                 <div class="form-group">
                     <label style="font-size: 18px;" for="fullname"><b>Fullname</b></label>
                     <input type="text" class="form-control" v-model="signup.fullname"
-                        style="margin-left: -3%;border: 0;box-shadow: none;margin-top:5px;" id="fullname"
+                        style="padding:0;border: 0;box-shadow: none;margin-top:5px;" id="fullname"
                         aria-describedby="emailHelp" placeholder="Full name">
                         <p id="dis3" style="display :none;color:red;margin : 0">Full name is Required</p>
                 </div>
                 <div class="form-group">
                     <label style="font-size: 18px;" for="email1"><b>Email</b></label>
                     <input type="email" class="form-control" v-model="signup.email1"
-                        style="margin-left: -3%;border: 0;box-shadow: none;margin-top:5px;" id="email1"
+                        style="padding:0;border: 0;box-shadow: none;margin-top:5px;" id="email1"
                         aria-describedby="emailHelp" placeholder="Email">
                         <p id="dis4" style="display :none;color:red;margin : 0;">Email is Required</p>
                         <p id="dis12" style="display :none;color:red;margin : 0;">Email is Invalid!</p>
@@ -105,7 +103,7 @@
                 <div class="form-group">
                     <label style="font-size: 18px;" for="contactno"><b>Contact</b></label>
                     <input type="text" class="form-control" v-model="signup.contact"
-                        style="margin-left: -3%;border: 0;box-shadow: none;margin-top:5px;" id="contactno"
+                        style="padding:0;border: 0;box-shadow: none;margin-top:5px;" id="contactno"
                         aria-describedby="emailHelp" placeholder="923*********">
                         <p id="dis5" style="display :none;color:red;margin : 0">Phone Number is Required</p>
                         <p id="dis6" style="display :none;color:red;margin : 0">Phone Number should be numeric only</p>
@@ -114,7 +112,7 @@
                 <div class="form-group">
                     <label style="font-size: 18px;" for="password1"><b>Password</b></label>
                     <input type="password" class="form-control" v-model="signup.password1"
-                        style="margin-left: -3%;border: 0;box-shadow: none;margin-top:5px;" id="password1"
+                        style="padding:0;border: 0;box-shadow: none;margin-top:5px;" id="password1"
                         placeholder="Enter 8 to 20 characters"> 
                         <p id="dis8" style="display :none;color:red;margin : 0">Password is Required</p>
                         <p id="dis9" style="display :none;color:red;margin : 0">Password length should be greater then or equal to 8</p>
@@ -122,7 +120,7 @@
                 <div class="form-group">
                     <label style="font-size: 18px;" for="password2"><b>Confirm Password</b></label>
                     <input type="password" class="form-control" v-model="signup.confirmPassword"
-                        style="margin-left:-3%;border: 0;box-shadow: none;margin-top:5px;" id="password2"
+                        style="padding:0;border: 0;box-shadow: none;margin-top:5px;" id="password2"
                         placeholder="Confirm your Password">
                         <p id="dis10" style="display :none;color:red;margin : 0">Confirm Password is Required</p>
                         <p id="dis11" style="display :none;color:red;margin : 0">Password and Confirm Password should be the same</p>
